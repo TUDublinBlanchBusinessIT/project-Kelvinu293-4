@@ -3,9 +3,10 @@
 $X = $_GET['Firstname'];
 $Y = $_GET['Lastname'];
 $Z = $_GET['Email'];
-$W = $GET['DateofBirth'];
+$W = $_GET['DateofBirth'];
 
 
-echo "This work 2 " . $X . " " . $Y . " " . $Z . " " . $W;
-
+echo "Student Name:" . $X . " " . $Y;
+echo "Email: " . $Z;
+echo " Date of Birth: ". $W;
 ?>
