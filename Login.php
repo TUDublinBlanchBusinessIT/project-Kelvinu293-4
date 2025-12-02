@@ -13,3 +13,14 @@
     </form>
 </body>
 </html>
+<?php
+$_SESSION["Username"] = "Admin5";
+$_SESSION["Password"] = "Holyfamily";
+
+echo $_SESSION["Username"] . "<br>";
+echo $_SESSION["Password"] . "<br>";
+
+
+
+
+?>
