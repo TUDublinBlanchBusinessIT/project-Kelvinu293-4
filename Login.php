@@ -8,7 +8,7 @@
 <body>
     <form action="Login.php" method="POST">
         Username:<input type="text" name="Username">
-        Password:<input type="text" name="Password">
+        Password:<input type="password" name="Password">
         <input type="submit" name="Login" value="Login">
     </form>
 </body>
