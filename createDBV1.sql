@@ -7,5 +7,7 @@ create table students (
     Lastname varchar (30),
     Email varchar (30),
     DateOfBirth date,
+    PhoneNumber BIGINT,
     primary key (id)
 );
+
