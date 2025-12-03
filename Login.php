@@ -29,7 +29,11 @@ if(isset($_POST["Login"])){
        else{
         echo "Missing Username or Password";
        }
-     
+       {
+        if(isset($_POST["Logout"])){
+            session_destroy();
+        }
+       }
 
 
 
