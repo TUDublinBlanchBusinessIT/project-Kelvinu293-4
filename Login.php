@@ -25,6 +25,9 @@ if(isset($_POST["Login"])){
             echo $_SESSION["Password"] . "<br>";
 
        }
+       else{
+        echo "Missing Username or Password";
+       }
 
 
 
