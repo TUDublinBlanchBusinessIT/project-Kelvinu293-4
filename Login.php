@@ -10,6 +10,7 @@
         Username:<br> <input type="text" name="Username"><br>
         Password:<br> <input type="password" name="Password"><br>
         <input type="submit" name="Login" value="Login"><br>
+        <input type="submit" name="Logout" value="Logout"><br>
     </form>
 </body>
 </html>
@@ -28,6 +29,7 @@ if(isset($_POST["Login"])){
        else{
         echo "Missing Username or Password";
        }
+     
 
 
 
