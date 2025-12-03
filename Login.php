@@ -25,6 +25,8 @@ if(isset($_POST["Login"])){
             echo $_SESSION["Username"] . "<br>";
             echo $_SESSION["Password"] . "<br>";
 
+            header("Location: student.html");
+
        }
        else{
         echo "Missing Username or Password";
