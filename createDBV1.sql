@@ -7,15 +7,15 @@ create table students (
     Lastname varchar (30),
     Email varchar (30),
     DateOfBirth date,
-    PhoneNumber BIGINT,
+    PhoneNumber bigint,
     primary key (id)
 );
 
 create table programmes (
     ProgrammeID int auto_increment,
-    ProgrammeCode varchar(20), 
-    ProgrammeName varchar(200),    
-    Campus varchar(80),   
-    Mode varchar(20),     
-    PRIMARY KEY (ProgrammeID)
+    ProgrammeCode varchar (20), 
+    ProgrammeName varchar (200),    
+    Campus varchar (80),   
+    Mode varchar (20),     
+    primary key (ProgrammeID)
 );
