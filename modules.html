@@ -15,39 +15,40 @@
         <form class="form-horizontal" action="modules.php" method="POST">
             <div class="form-group">
                 <label for="ModuleID">Module</label>
-                <input type="text" id="ModuleID" name="ModuleID" required> 
-            </div>
-
-              <div class="form-group">
-                <label for="ModuleCode">Module Code</label>
-                <input type="text" id="ModuleCode" name="ModuleCode" required> 
-            </div>
-
-            
-              <div class="form-group">
-                <label for="ModuleName">Module Name</label>
-                <input type="text" id="ModuleName" name="ModuleName" required> 
-            </div>
-
-               <div class="form-group">
-                <label for=" Credits">Credits</label>
-                <input type="number" id=" Credits" name=" Credits" required> 
-            </div>
-
-             <div class="form-group">
-                <label for="Semester">Semester</label>
-                <input type="text" id="Semester" name="Semester" required> 
+                <input type="text" id="ModuleID" name="ModuleID" required>
             </div>
 
             <div class="form-group">
-                <label for="ProgrammeID">Programme Code</label>
-                <input type="text" id="ProgrammeID" name="ProgrammeID" required> 
+                <label for="ModuleCode">Module Code</label>
+                <input type="text" id="ModuleCode" name="ModuleCode" required>
             </div>
 
 
+            <div class="form-group">
+                <label for="ModuleName">Module Name</label>
+                <input type="text" id="ModuleName" name="ModuleName" required>
+            </div>
+
+            <div class="form-group">
+                <label for=" Credits">Credits</label>
+                <input type="number" id=" Credits" name=" Credits" required>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-5" for="Semester">What semester are you in</label>
+                <div class="col-sm-7">
+                    <input class="form-control" id="Semester" type="range" min="1" max="4" value="30" name="Semester">
+                </div>
+
+                <div class="form-group">
+                    <label for="ProgrammeID">Programme Code</label>
+                    <input type="text" id="ProgrammeID" name="ProgrammeID" required>
+                </div>
 
 
-            
+
+
+
 
 
         </form>

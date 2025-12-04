@@ -16,7 +16,7 @@ $sql = "INSERT INTO programmes (ProgrammeCode, ProgrammeName, Campus, Mode) VALU
 
 if ($conn->query($sql) === TRUE) {
     
-    header('Location: student.html');
+    header('Location: modules.html');
     exit();
 } else {
    
