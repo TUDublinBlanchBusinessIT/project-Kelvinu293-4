@@ -11,10 +11,11 @@ create table students (
     primary key (id)
 );
 
-CREATE TABLE lecturers (
-    LecturerID int auto_increment,
-    Firstname varchar (30),
-    Surname varchar (30),
-    Email varchar(30),
-    primary key (LecturerID)
+create table programmes (
+    ProgrammeID int auto_increment,
+    ProgrammeCode varchar(20), 
+    ProgrammeName varchar(200),    
+    Campus varchar(80),   
+    Mode varchar(20),     
+    PRIMARY KEY (ProgrammeID)
 );
