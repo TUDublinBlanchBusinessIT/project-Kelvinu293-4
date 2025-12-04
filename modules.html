@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./sessionEx.css">
 </head>
+
 <body>
     <div class="container">
         <h3 align="center">Filled Modules</h3>
+        <form class="form-horizontal" action="modules.php" method="POST">
+            <div class="form-group">
+                <label for="ModuleID">Module</label>
+                <input type="text" id="ModuleID" name="ModuleID" required> 
+            </div>
+        </form>
+
 
     </div>
 </body>
+
 </html>
