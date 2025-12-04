@@ -19,3 +19,14 @@ create table programmes (
     Mode varchar (20),     
     primary key (ProgrammeID)
 );
+
+create table modules (
+    ModuleID int auto_increment,
+    ModuleCode varchar(20),     
+    ModuleName varchar(300),     
+    Credits int,
+    Semester varchar(20),      
+    ProgrammeID  int,             
+    primary key (ModuleID),
+    FOREIGN KEY (ProgrammeID) REFERENCES programmes(ProgrammeID)
+);
