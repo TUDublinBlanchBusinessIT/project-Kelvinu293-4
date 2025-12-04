@@ -11,3 +11,10 @@ create table students (
     primary key (id)
 );
 
+CREATE TABLE lecturers (
+    LecturerID int auto_increment,
+    Firstname varchar (30),
+    Surname varchar (30),
+    Email varchar(30),
+    primary key (LecturerID)
+);
