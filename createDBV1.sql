@@ -2,13 +2,13 @@ drop database if exists student;
 create database student;
 use student;
 create table students (
-    id int auto_increment,
+    StudentID int auto_increment,
     Firstname varchar (30),
     Lastname varchar (30),
     Email varchar (30),
     DateOfBirth date,
     PhoneNumber bigint,
-    primary key (id)
+    primary key (StudentID)
 );
 
 create table programmes (
@@ -24,7 +24,7 @@ create table modules (
     ModuleID int auto_increment,
     ModuleCode varchar(20),     
     ModuleName varchar(300),     
-    Credits int,
+    Credits tinyint,
     Semester varchar(20),      
     ProgrammeID  int,             
     primary key (ModuleID),
