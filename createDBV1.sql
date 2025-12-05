@@ -30,3 +30,14 @@ create table modules (
     primary key (ModuleID),
     FOREIGN KEY (ProgrammeID) REFERENCES programmes(ProgrammeID)
 );
+
+create table payments (
+    PaymentID int auto_increment,
+    StudentID int,
+    Amount decimal(22,30),
+    PaymentDate DATETIME,
+    Information varchar(500),
+    primary key (PaymentID),
+    FOREIGN KEY (StudentID) REFERENCES students(StudentID)
+
+)
