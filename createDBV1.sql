@@ -36,7 +36,7 @@ create table payments (
     StudentID int,
     Amount decimal(22,30),
     PaymentDate DATETIME,
-    Information varchar(500),
+    Information varchar(1000),
     primary key (PaymentID),
     FOREIGN KEY (StudentID) REFERENCES students(StudentID)
 
