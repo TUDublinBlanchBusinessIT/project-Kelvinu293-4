@@ -6,10 +6,10 @@ $ModuleCode  = $_POST['ModuleCode'];
 $ModuleName  = $_POST['ModuleName'];
 $Credits     = $_POST['Credits'];
 $Semester    = $_POST['Semester'];
+$ProgrammeID = $_POST['ProgrammeID'];
 
 
-
-$sql = "INSERT INTO modules (ModuleCode, ModuleName, Credits, Semester) VALUES ('$ModuleCode', '$ModuleName', $Credits, '$Semester')";
+$sql = "INSERT INTO modules (ModuleCode, ModuleName, Credits, Semester, ProgrammeID) VALUES ('$ModuleCode', '$ModuleName', $Credits, '$Semester', '$ProgrammeID')";
 
 
 if (mysqli_query($conn, $sql)) {
