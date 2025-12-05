@@ -2,10 +2,10 @@
 session_start();
 include("dbcon.php");
 
-$ModuleCode  = $_POST['ModuleCode'];
-$ModuleName  = $_POST['ModuleName'];
-$Credits     = $_POST['Credits'];
-$Semester    = $_POST['Semester'];
+$ModuleCode = $_POST['ModuleCode'];
+$ModuleName = $_POST['ModuleName'];
+$Credits = $_POST['Credits'];
+$Semester = $_POST['Semester'];
 $ProgrammeID = $_POST['ProgrammeID'];
 
 
