@@ -15,6 +15,9 @@ if (mysqli_query($conn, $sql)) {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
+header("Location: programme.html");
+exit();
+
 mysqli_close($conn);
 
 
