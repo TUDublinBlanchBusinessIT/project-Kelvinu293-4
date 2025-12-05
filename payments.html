@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Payment page</h1>
     <form method="POST" action="payments.php"></form>
     Student ID: <input type="number" name="StudentID" required> <br>
     Amount of the cost: <input type="number" name="Amount" required> <br>
     Date of Payment: <input type="datetime-local" name="PaymentDate" required> <br>
-    Any of information comment here: 
+    <div class="container">
+        <label for="Information" class="form-control">Any of information comment here:</label>
+        <textarea class="form-control" id="Information" name="Information" rows="3" placeholder="E.g. I couldn't select one of my module."></textarea>
 
-    
+    </div>
+
+
 </body>
+
 </html>
