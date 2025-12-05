@@ -34,10 +34,9 @@ create table modules (
 create table payments (
     PaymentID int auto_increment,
     StudentID int,
-    Amount decimal(22,30),
+    Amount decimal(10,2),
     PaymentDate DATETIME,
     Information varchar(1000),
     primary key (PaymentID),
     FOREIGN KEY (StudentID) REFERENCES students(StudentID)
-
-)
+);
