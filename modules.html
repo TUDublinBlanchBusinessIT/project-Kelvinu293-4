@@ -14,11 +14,6 @@
         <h3 align="center">Filled Modules</h3>
         <form class="form-horizontal" action="modules.php" method="POST">
             <div class="form-group">
-                <label for="ModuleID">Module</label>
-                <input type="text" id="ModuleID" name="ModuleID" required>
-            </div>
-
-            <div class="form-group">
                 <label for="ModuleCode">Module Code</label>
                 <input type="text" id="ModuleCode" name="ModuleCode" required>
             </div>
@@ -30,8 +25,8 @@
             </div>
 
             <div class="form-group">
-                <label for=" Credits">Credits</label>
-                <input type="number" id=" Credits" name=" Credits" required>
+                <label for="Credits">Credits</label>
+                <input type="number" id="Credits" name="Credits" required>
             </div>
 
             <div class="form-group">
@@ -45,16 +40,23 @@
                     <input type="text" id="ProgrammeID" name="ProgrammeID" required>
                 </div>
 
-
-
-
-
-
+                <div class="form-group">
+                    <div class="col-sm-offset-5 col-sm-7">
+                        <button type="submit" class="btn btn-default">Continue</button>
+                    </div>
 
         </form>
-
-
     </div>
+
+    <script>
+        var result = document.getElementById("result");
+        var mine = document.getElementById("mine");
+        function change() {
+            console.log("hello");
+            //result.innerText = mine.value;
+        }
+    </script>
+
 </body>
 
 </html>
