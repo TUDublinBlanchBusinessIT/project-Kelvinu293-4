@@ -10,44 +10,25 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="Login.php" method="POST">
-        Username:<br> <input type="text" name="Username"><br>
-        Password:<br> <input type="password" name="Password"><br>
-        <input type="submit" name="Login" value="Login"><br>
-        <input type="submit" name="Logout" value="Logout"><br>
+    <form action="UserPass.php.php" method="POST">
+        <table align="center">
+        <tr>
+        <td><h1>Login IN</h1></td>
+        </tr>
+        <tr><td>Username:</td>
+        <td><input type="text" name="Username"></td>
+        </tr>
+        <tr><td>Password:</td>
+        <td><input type="password" name="Password"></td>
+        </tr> 
+        <tr><td><input type="submit" name="Login" value="Login"></td>
+        </tr>
+        
+        </table>
     </form>
 </body>
 </html>
 <?php
-if(isset($_POST["Login"])){
-    if(!empty($_POST["Username"]) &&
-       !empty($_POST["Password"])){
-        
-        $_SESSION["Username"] = $_POST["Username"];
-        $_SESSION["Password"] = $_POST["Password"];
-            
-            echo $_SESSION["Username"] . "<br>";
-            echo $_SESSION["Password"] . "<br>";
-
-            header("Location: student.html");
-
-       }
-       else{
-        echo "Missing Username or Password";
-       }
-       {
-        if(isset($_POST["Logout"])){
-            session_destroy();
-        }
-       }
-
-
-
-
-
-
-}
-
 
 
 
