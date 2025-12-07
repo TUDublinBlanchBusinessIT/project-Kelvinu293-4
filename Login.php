@@ -19,34 +19,15 @@
 </body>
 </html>
 <?php
-if(isset($_POST["Login"])){
-    if(!empty($_POST["Username"]) &&
-       !empty($_POST["Password"])){
-        
-        $_SESSION["Username"] = $_POST["Username"];
-        $_SESSION["Password"] = $_POST["Password"];
-            
-            echo $_SESSION["Username"] . "<br>";
-            echo $_SESSION["Password"] . "<br>";
+session_start();
 
-            header("Location: student.html");
-
-       }
-       else{
-        echo "Missing Username or Password";
-       }
-       {
-        if(isset($_POST["Logout"])){
-            session_destroy();
-        }
-       }
+$_SESSION["Username"] = $_POST["Username"];
+$_SESSION["Password"] = $_POST["Password"];
 
 
 
 
 
-
-}
 
 
 
