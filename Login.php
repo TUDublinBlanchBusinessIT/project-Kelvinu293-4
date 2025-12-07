@@ -29,6 +29,9 @@ if(isset($_POST["Login"])){
         header("Location: student.html");
         exit();
     }
+    else {
+        echo "Missing Username or Password";
+    }
 
 
     
